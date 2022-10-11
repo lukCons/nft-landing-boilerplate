@@ -1,31 +1,31 @@
 export const network = {
-  name: "Arbitrum One",
-  chainId: 42161,
-  shortName: "arb1",
-  chain: "ETH",
+  name: "Polygon MATIC",
+  chainId: 137,
+  shortName: "polygon",
+  chain: "MATIC",
   network: "mainnet",
-  networkId: 42161,
-  nativeCurrency: { name: "Ether", symbol: "AETH", decimals: 18 },
+  networkId: 137,
+  nativeCurrency: { name: "MATIC", symbol: "MATIC", decimals: 18 },
   rpc: [
-    "https://arb1.arbitrum.io/rpc",
-    "wss://arb1.arbitrum.io/ws",
+    "https://polygon-rpc.com",
+    "wss://polygon-rpc.com",
   ],
   faucets: [],
   explorers: [
-    { name: "Arbiscan", url: "https://arbiscan.io", standard: "EIP3091" },
+    { name: "Polyscan", url: "https://polygonscan.com", standard: "EIP3091" },
     {
-      name: "Arbitrum Explorer",
-      url: "https://explorer.arbitrum.io",
+      name: "Polyscan Explorer",
+      url: "https://polygonscan.com",
       standard: "EIP3091",
     },
   ],
-  infoURL: "https://arbitrum.io",
+  infoURL: "https://www.polygon.technology",
   parent: {
     type: "L2",
     chain: "eip155-1",
-    bridges: [{ url: "https://bridge.arbitrum.io" }],
+    bridges: [{ url: "https://wallet.polygon.technology/login/" }],
   },
 };
 
 
-export const supportedChainIds = [network.chainId, 3]
+export const supportedChainIds = [network.chainId, 137]

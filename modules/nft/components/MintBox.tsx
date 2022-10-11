@@ -16,12 +16,12 @@ export function MintBox() {
     
 
     setLoading(true);
-    const contractAddress = process.env.NEXT_PUBLIC_SMARTCONTRACT_ADDRESS;
+    const contractAddress = "0x7f792853d848d9FD693925D76B932D6E03e656b8"; //process.env.NEXT_PUBLIC_SMARTCONTRACT_ADDRESS;
 
     const web3 = new Web3(context.library.provider);
 
     const myContract = new web3.eth.Contract(abi as any, contractAddress);
-    var weiValue = web3.utils.toWei("0.05", "ether");
+    var weiValue = web3.utils.toWei("1", "ether");
 
     const options = {
       from: context.account,

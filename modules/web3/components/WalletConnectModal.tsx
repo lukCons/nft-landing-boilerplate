@@ -13,7 +13,7 @@ export function WalletConnectModal(): React.ReactElement {
   function onClickBrowserProvider() {
     context.activate(injected, async () => {
       toast.error(
-        "Error loggin in, make sure you are connected to the Arbitrum network."
+        "Error loggin in, make sure you are connected to the Polygon network."
       );
 
       try {
